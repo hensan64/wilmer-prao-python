@@ -19,14 +19,12 @@ print()
 
 # A function is used when you want to do something many times,
 #     without having to write the same code over and over again...
-# A function is prefixed with 'def' and has to be DEFINED BEFORE being called
+# A function is prefixed with 'def' and has to be DEFINED BEFORE (above) being called
 def my_print_function(print_this):
     # 'print_this' above is called an ARGUMENT. An ARGUMENT is input information to a FUNCTION.
     print(print_this)  # Here we print what is sent into this function, that is the 'print_this' argument.
 
 
-print()  # Empty line
-
-my_print_function("Print once...")  # Here I am calling my own print function
-my_print_function("Print twice...")  # And again...
-my_print_function("Print three times...")  # And again...
+my_print_function("Print using my function once...")  # Here I am calling my own print function
+my_print_function("Print using my function twice...")  # And again...
+my_print_function("Print using my function third time...")  # And again...
