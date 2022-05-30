@@ -20,7 +20,6 @@ while True:
         break
     print("\nInvalid input. Please retry.")
 
-
 # 1 = Rock
 # 2 = Paper
 # 3 = Scissors
