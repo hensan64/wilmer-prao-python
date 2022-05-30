@@ -9,10 +9,6 @@
 #    5. Calculate who won the round ('if' or 'case' clause)
 #    6. Print a WIN/LOOSE statement
 #
-#    Additional tasks if you have time:
-#    7. Handle multiple rounds (using a loop)
-#    8. The person that reaches 5 won rounds (check with 'if' clause) wins all over, and this shall be printed
-#
 # TIP: Do one point at the time and test that it works before moving on to the next point
 
 from random import randint
