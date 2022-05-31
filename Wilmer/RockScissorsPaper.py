@@ -12,38 +12,49 @@
 # TIP: Do one point at the time and test that it works before moving on to the next point
 
 from random import randint
-RPS_AI = randint(1, 3)
 
-while True:
-    RPS_input = str(input("Rock, Paper or Scissors: ").lower())
-    if RPS_input == "rock" or RPS_input == "paper" or RPS_input == "scissors":
-        break
-    print("\nInvalid input. Please retry.")
+ROCK = "rock"
+PAPER = "paper"
+SCISSORS = "scissors"
 
-# 1 = Rock
-# 2 = Paper
-# 3 = Scissors
+RPS_draw = True
+while RPS_draw:
+    RPS_AI = randint(1, 3)
+    while True:
+        RPS_input = str(input("Rock, Paper, Scissors: ").lower())
+        if RPS_input == ROCK or RPS_input == PAPER or RPS_input == SCISSORS:
+            break
+        print("\nInvalid input. Please retry.")
 
-if RPS_AI == 1:
-    if RPS_input == "rock":
-        print("\nDraw.\nYour opponent picked Rock.")
-    elif RPS_input == "paper":
-        print("\nYou won.\nYour opponent picked Rock.")
-    elif RPS_input == "scissors":
-        print("\nYou lost.\nYour opponent picked Rock.")
+    #  1 = Rock
+    if RPS_AI == 1:
+        if RPS_input == ROCK:
+            print("\nDraw.\n- Your opponent picked Rock.\n\nTry again.")
+        elif RPS_input == PAPER:
+            print("\nYou won.\n- Your opponent picked Rock.\n")
+            RPS_draw = False
+        elif RPS_input == SCISSORS:
+            print("\nYou lost.\n- Your opponent picked Rock.\n")
+            RPS_draw = False
 
-if RPS_AI == 2:
-    if RPS_input == "rock":
-        print("\nYou lost.\nYour opponent picked Paper.")
-    elif RPS_input == "paper":
-        print("\nDraw.\nYour opponent picked Paper.")
-    elif RPS_input == "scissors":
-        print("\nYou won.\nYour opponent picked Paper.")
+    #  2 = Paper
+    if RPS_AI == 2:
+        if RPS_input == ROCK:
+            print("\nYou lost.\n- Your opponent picked Paper.\n")
+            RPS_draw = False
+        elif RPS_input == PAPER:
+            print("\nDraw.\n- Your opponent picked Paper.\n\nTry again.")
+        elif RPS_input == SCISSORS:
+            print("\nYou won.\n- Your opponent picked Paper.\n")
+            RPS_draw = False
 
-if RPS_AI == 3:
-    if RPS_input == "rock":
-        print("\nYou won.\nYour opponent picked Scissors.")
-    elif RPS_input == "paper":
-        print("\nYou lost.\nYour opponent picked Scissors.")
-    elif RPS_input == "scissors":
-        print("\nDraw.\nYour opponent picked Scissors.")
+    #  3 = Scissors
+    if RPS_AI == 3:
+        if RPS_input == ROCK:
+            print("\nYou won.\n- Your opponent picked Scissors.\n")
+            RPS_draw = False
+        elif RPS_input == PAPER:
+            print("\nYou lost.\n- Your opponent picked Scissors.\n")
+            RPS_draw = False
+        elif RPS_input == SCISSORS:
+            print("\nDraw.\n- Your opponent picked Scissors.\n\nTry again.")
