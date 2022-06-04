@@ -2,7 +2,7 @@
 integer = 2
 float_num = 3.125
 bool_val = False
-integer = 7
+integer_2 = 7
 
 addition = 10 + 5        # 15
 subtraction = 7 - 4      # 3
@@ -10,7 +10,7 @@ division = 12 / 5        # 2.4
 multiplication = 4 * 4   # 16
 
 exponentiation = 5 ** 3  # 125
-floordivision = 32 // 6  # 5
+floor_division = 32 // 6 # 5
 modulo = 20 % 6          # 2
 
 # addition
@@ -714,3 +714,45 @@ print(internet_celebrities)                          # 5
 print(gamers)                                        # 6
 
 print()
+
+from random import randint
+youtuber_random = randint(1, 5)
+favourite_youtubers = {1: "Ludwig Ahgren",
+                       2: "Sleepy",
+                       3: "Salty Phish",
+                       4: "Twobold",
+                       5: "Disguised Toast"}
+
+if youtuber_random == 1:
+    print("One of my favourite youtuber is {}.\nHe is a Variety Youtuber and Streamer, famous for his Subathon Event on Twitch during early 2021. "
+          "He used to stream livestreams on Twitch, but switched to streaming on Youtube late 2021.\nI like him because of his similar type of silly "
+          "humour and personality I have.".format(str(favourite_youtubers[youtuber_random])))
+elif youtuber_random == 2:
+    print("One of my favourite youtuber is {}.\nHe is a Variety Gaming Youtuber and Twitch Streamer, mostly famous from his Overwatch gameplay."
+          "\nI like him because of his over-exaggerated and ridiculous expressions and funny humour, similar to mine. He is part of the OfflineTV & "
+          "Friends side of OTV.".format(str(favourite_youtubers[youtuber_random])))
+elif youtuber_random == 3:
+    print("One of my favourite youtuber is {}.\nHe is a Variety Gaming Youtuber and Twitch Streamer, mostly famous from his Overwatch gameplay."
+          "\nI like him because of his humour and funny chemistry with his other hilarious friends, like one of my other favourite youtubers, Twobold.".format(str(favourite_youtubers[youtuber_random])))
+elif youtuber_random == 4:
+    print("One of my favourite youtuber is {}.\nHe is an Overwatch Youtuber and Twitch Streamer, mostly famous from his Overwatch gameplay."
+          "\nI like him because of his humour and funny chemistry with his other hilarious friends, like one of my other favourite youtubers, "
+          "Salty Phish.".format(str(favourite_youtubers[youtuber_random])))
+else:
+    print("One of my favourite youtuber is {}.\nHe is a Variety Youtuber and Twitch Streamer, famous from his Hearthstone gameplay early in his "
+          "career and his Among Us gameplay, intelligence, and IQ.\nI like him because of his ironic type of non-serious toxic and hilarious humour "
+          "towards people.\nHe is also part of the entertainment organisation on Youtube called OfflineTV".format(str(favourite_youtubers[youtuber_random])))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
